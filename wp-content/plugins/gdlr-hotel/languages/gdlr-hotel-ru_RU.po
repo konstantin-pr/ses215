@@ -1,22 +1,28 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Goodlayers Hotel\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-17 22:08+0400\n"
-"PO-Revision-Date: 2015-11-19 02:07+0400\n"
+"PO-Revision-Date: Mon Mar 21 2016 20:22:08 GMT+0200 (Ð¤Ð¸Ð½Ð»ÑÐ½Ð´Ð¸Ñ "
+"(Ð·Ð¸Ð¼Ð°))\n"
+"Last-Translator: admin <kean.dev@gmail.com>\n"
 "Language-Team: \n"
+"Language: Russian\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
-"X-Poedit-Basepath: C:/xampp/htdocs/hotelmaster/wp-content/plugins/gdlr-"
-"hotel\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e\n"
-"Last-Translator: \n"
-"Language: ru_RU\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: C:/xampp/htdocs/hotelmaster/wp-content/plugins/gdlr-hotel\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Loco-Target-Locale: ru_RU"
 
 #: framework/gdlr-coupon-option.php:18 framework/gdlr-coupon-option.php:19
 #: framework/gdlr-coupon-option.php:30
@@ -106,8 +112,7 @@ msgstr "Тут может быть введён только номер"
 
 #: framework/gdlr-coupon-option.php:111
 msgid "Apply only to specific room ( room id separated by comma )"
-msgstr ""
-"Применить только к определённой комнате (ID комнат указывать через запятую)"
+msgstr "Применить только к определённой комнате (ID комнат указывать через запятую)"
 
 #: framework/gdlr-room-option.php:28 include/gdlr-reservation-bar.php:346
 msgid "Rooms"
@@ -210,8 +215,7 @@ msgid "Room Amount"
 msgstr "Количество номеров"
 
 #: framework/gdlr-room-option.php:163
-msgid ""
-"Number of room available on the same period of time. Only fill number here."
+msgid "Number of room available on the same period of time. Only fill number here."
 msgstr ""
 "Кол-во комнат доступно на тот же период времени. Пожалуйста, введите тут "
 "только номер."
@@ -502,7 +506,7 @@ msgstr "Сервис в корзине не найден"
 
 #: framework/gdlr-service-option.php:70
 msgid "Assign to Hotel Branches"
-msgstr "Связать с разделами Отеля"
+msgstr "Связать с направлениями Отеля"
 
 #: framework/gdlr-service-option.php:82
 msgid "Assign to Hostel Branches"
@@ -591,7 +595,7 @@ msgstr "Код"
 
 #: framework/gdlr-transaction.php:92
 msgid "Hotel Branches :"
-msgstr "Разделы отеля :"
+msgstr "Направление отелей :"
 
 #: framework/gdlr-transaction.php:95
 msgid "All"
@@ -788,7 +792,7 @@ msgstr "Формат отображения валюты"
 
 #: framework/plugin-option.php:74
 msgid "Enable Hotel Branch ( Using Category )"
-msgstr "Акт-ть раздел отеля (используемая категория)"
+msgstr "Акт-ть направление отеля (используемая категория)"
 
 #: framework/plugin-option.php:79
 msgid "Preserve The Room After"
@@ -846,10 +850,8 @@ msgid "Deposit Amount"
 msgstr "Размер депозита"
 
 #: framework/plugin-option.php:111
-msgid ""
-"Allow customer to pay part of price for booking the room ( as percent )."
-msgstr ""
-"Разрешить клиенту оплатить часть цены за забронированный номер (в процентах)."
+msgid "Allow customer to pay part of price for booking the room ( as percent )."
+msgstr "Разрешить клиенту оплатить часть цены за забронированный номер (в процентах)."
 
 #: framework/plugin-option.php:115
 msgid "Payment Method"
@@ -1026,8 +1028,7 @@ msgid "Date field invalid"
 msgstr "Ошибка в поле даты"
 
 #: include/gdlr-booking-item.php:62
-msgid ""
-"Please select 'check in' and 'check out' date from reservation bar again."
+msgid "Please select 'check in' and 'check out' date from reservation bar again."
 msgstr ""
 "Пожалуйста, повторно выберите \"Дату Заезда\" и \"Дату Выезда\" на панели "
 "резервирования."
@@ -1229,7 +1230,7 @@ msgstr "Изменить номер"
 
 #: include/gdlr-reservation-bar.php:311 include/page-builder-sync.php:66
 msgid "Hotel Branches"
-msgstr "Разделы отеля"
+msgstr "Направление отелей"
 
 #: include/gdlr-reservation-bar.php:323 include/page-builder-sync.php:74
 msgid "Check In"
@@ -1250,7 +1251,7 @@ msgstr "Поиск"
 
 #: include/gdlr-reservation-bar.php:435
 msgid "Please select hotel branch"
-msgstr "Пожалуйста, выберите раздел отеля"
+msgstr "Пожалуйста, выберите направление отеля"
 
 #: include/gdlr-reservation-bar.php:441
 msgid "* Please select branch"
