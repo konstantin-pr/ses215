@@ -19,8 +19,8 @@ SET time_zone = "+00:00";
 --
 -- База данных: `spik`
 --
-CREATE DATABASE IF NOT EXISTS `spik` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `spik`;
+CREATE DATABASE IF NOT EXISTS `kpryanichnikovdb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `kpryanichnikovdb`;
 
 -- --------------------------------------------------------
 
