@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Мар 23 2016 г., 15:19
+-- Время создания: Мар 23 2016 г., 15:38
 -- Версия сервера: 5.5.32
 -- Версия PHP: 5.4.16
 
@@ -28,6 +28,7 @@ USE `kpryanichnikovdb`;
 -- Структура таблицы `wp_commentmeta`
 --
 
+DROP TABLE IF EXISTS `wp_commentmeta`;
 CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `comment_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -44,6 +45,7 @@ CREATE TABLE IF NOT EXISTS `wp_commentmeta` (
 -- Структура таблицы `wp_comments`
 --
 
+DROP TABLE IF EXISTS `wp_comments`;
 CREATE TABLE IF NOT EXISTS `wp_comments` (
   `comment_ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `comment_post_ID` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -98,6 +100,7 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 -- Структура таблицы `wp_gdlr_hostel_booking`
 --
 
+DROP TABLE IF EXISTS `wp_gdlr_hostel_booking`;
 CREATE TABLE IF NOT EXISTS `wp_gdlr_hostel_booking` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `payment_id` bigint(20) unsigned NOT NULL,
@@ -113,6 +116,7 @@ CREATE TABLE IF NOT EXISTS `wp_gdlr_hostel_booking` (
 -- Структура таблицы `wp_gdlr_hostel_payment`
 --
 
+DROP TABLE IF EXISTS `wp_gdlr_hostel_payment`;
 CREATE TABLE IF NOT EXISTS `wp_gdlr_hostel_payment` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `total_price` decimal(19,4) DEFAULT NULL,
@@ -133,6 +137,7 @@ CREATE TABLE IF NOT EXISTS `wp_gdlr_hostel_payment` (
 -- Структура таблицы `wp_gdlr_hotel_booking`
 --
 
+DROP TABLE IF EXISTS `wp_gdlr_hotel_booking`;
 CREATE TABLE IF NOT EXISTS `wp_gdlr_hotel_booking` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `payment_id` bigint(20) unsigned NOT NULL,
@@ -148,6 +153,7 @@ CREATE TABLE IF NOT EXISTS `wp_gdlr_hotel_booking` (
 -- Структура таблицы `wp_gdlr_hotel_payment`
 --
 
+DROP TABLE IF EXISTS `wp_gdlr_hotel_payment`;
 CREATE TABLE IF NOT EXISTS `wp_gdlr_hotel_payment` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `total_price` decimal(19,4) DEFAULT NULL,
@@ -168,6 +174,7 @@ CREATE TABLE IF NOT EXISTS `wp_gdlr_hotel_payment` (
 -- Структура таблицы `wp_links`
 --
 
+DROP TABLE IF EXISTS `wp_links`;
 CREATE TABLE IF NOT EXISTS `wp_links` (
   `link_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `link_url` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
@@ -192,6 +199,7 @@ CREATE TABLE IF NOT EXISTS `wp_links` (
 -- Структура таблицы `wp_masterslider_options`
 --
 
+DROP TABLE IF EXISTS `wp_masterslider_options`;
 CREATE TABLE IF NOT EXISTS `wp_masterslider_options` (
   `ID` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
   `option_name` varchar(120) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -217,6 +225,7 @@ INSERT INTO `wp_masterslider_options` (`ID`, `option_name`, `option_value`) VALU
 -- Структура таблицы `wp_masterslider_sliders`
 --
 
+DROP TABLE IF EXISTS `wp_masterslider_sliders`;
 CREATE TABLE IF NOT EXISTS `wp_masterslider_sliders` (
   `ID` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -253,6 +262,7 @@ INSERT INTO `wp_masterslider_sliders` (`ID`, `title`, `alias`, `type`, `slides_n
 -- Структура таблицы `wp_options`
 --
 
+DROP TABLE IF EXISTS `wp_options`;
 CREATE TABLE IF NOT EXISTS `wp_options` (
   `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `option_name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
@@ -558,6 +568,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 -- Структура таблицы `wp_postmeta`
 --
 
+DROP TABLE IF EXISTS `wp_postmeta`;
 CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `post_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -3053,6 +3064,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 -- Структура таблицы `wp_posts`
 --
 
+DROP TABLE IF EXISTS `wp_posts`;
 CREATE TABLE IF NOT EXISTS `wp_posts` (
   `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `post_author` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -3557,6 +3569,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 -- Структура таблицы `wp_taxonomymeta`
 --
 
+DROP TABLE IF EXISTS `wp_taxonomymeta`;
 CREATE TABLE IF NOT EXISTS `wp_taxonomymeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `taxonomy_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -3573,6 +3586,7 @@ CREATE TABLE IF NOT EXISTS `wp_taxonomymeta` (
 -- Структура таблицы `wp_termmeta`
 --
 
+DROP TABLE IF EXISTS `wp_termmeta`;
 CREATE TABLE IF NOT EXISTS `wp_termmeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -3589,6 +3603,7 @@ CREATE TABLE IF NOT EXISTS `wp_termmeta` (
 -- Структура таблицы `wp_terms`
 --
 
+DROP TABLE IF EXISTS `wp_terms`;
 CREATE TABLE IF NOT EXISTS `wp_terms` (
   `term_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
@@ -3674,6 +3689,7 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 -- Структура таблицы `wp_term_relationships`
 --
 
+DROP TABLE IF EXISTS `wp_term_relationships`;
 CREATE TABLE IF NOT EXISTS `wp_term_relationships` (
   `object_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `term_taxonomy_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -3990,6 +4006,7 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 -- Структура таблицы `wp_term_taxonomy`
 --
 
+DROP TABLE IF EXISTS `wp_term_taxonomy`;
 CREATE TABLE IF NOT EXISTS `wp_term_taxonomy` (
   `term_taxonomy_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -4077,6 +4094,7 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 -- Структура таблицы `wp_usermeta`
 --
 
+DROP TABLE IF EXISTS `wp_usermeta`;
 CREATE TABLE IF NOT EXISTS `wp_usermeta` (
   `umeta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -4129,6 +4147,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 -- Структура таблицы `wp_users`
 --
 
+DROP TABLE IF EXISTS `wp_users`;
 CREATE TABLE IF NOT EXISTS `wp_users` (
   `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_login` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
@@ -4158,6 +4177,7 @@ INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_
 -- Структура таблицы `wp_wpgmza`
 --
 
+DROP TABLE IF EXISTS `wp_wpgmza`;
 CREATE TABLE IF NOT EXISTS `wp_wpgmza` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `map_id` int(11) NOT NULL,
@@ -4190,6 +4210,7 @@ INSERT INTO `wp_wpgmza` (`id`, `map_id`, `address`, `description`, `pic`, `link`
 -- Структура таблицы `wp_wpgmza_categories`
 --
 
+DROP TABLE IF EXISTS `wp_wpgmza_categories`;
 CREATE TABLE IF NOT EXISTS `wp_wpgmza_categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `active` tinyint(1) NOT NULL,
@@ -4205,6 +4226,7 @@ CREATE TABLE IF NOT EXISTS `wp_wpgmza_categories` (
 -- Структура таблицы `wp_wpgmza_category_maps`
 --
 
+DROP TABLE IF EXISTS `wp_wpgmza_category_maps`;
 CREATE TABLE IF NOT EXISTS `wp_wpgmza_category_maps` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `cat_id` int(11) NOT NULL,
@@ -4218,6 +4240,7 @@ CREATE TABLE IF NOT EXISTS `wp_wpgmza_category_maps` (
 -- Структура таблицы `wp_wpgmza_maps`
 --
 
+DROP TABLE IF EXISTS `wp_wpgmza_maps`;
 CREATE TABLE IF NOT EXISTS `wp_wpgmza_maps` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `map_title` varchar(50) NOT NULL,
@@ -4270,6 +4293,7 @@ INSERT INTO `wp_wpgmza_maps` (`id`, `map_title`, `map_width`, `map_height`, `map
 -- Структура таблицы `wp_wpgmza_polygon`
 --
 
+DROP TABLE IF EXISTS `wp_wpgmza_polygon`;
 CREATE TABLE IF NOT EXISTS `wp_wpgmza_polygon` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `map_id` int(11) NOT NULL,
@@ -4293,6 +4317,7 @@ CREATE TABLE IF NOT EXISTS `wp_wpgmza_polygon` (
 -- Структура таблицы `wp_wpgmza_polylines`
 --
 
+DROP TABLE IF EXISTS `wp_wpgmza_polylines`;
 CREATE TABLE IF NOT EXISTS `wp_wpgmza_polylines` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `map_id` int(11) NOT NULL,
