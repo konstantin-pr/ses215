@@ -53,6 +53,10 @@ hr{ display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0
 input[type=submit],input[type=button],button{ margin:0; padding:0;}
 input,select,a img{ vertical-align:middle; }
 
+.gdlr-item-title-head .gdlr-skin-title {color: #fff !important}
+.gdlr-title-item .gdlr-item-title-caption {color: #fff};
+
+
 b, strong{ font-weight: bold; }
 i, em{ font-style: italic; }
 
@@ -171,6 +175,14 @@ img.gdlr-full-boxed-background{ min-height: 100%; min-width: 1024px;
   img.gdlr-full-boxed-background { left: 50%; margin-left: -512px; }
 }
 
+.gdlr-header-wrapper, .gdlr-header-inner {
+background: #f2b900; /* Old browsers */
+background: -moz-linear-gradient(top, #f2b900 0%, #f27500 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f2b900 0%,#f27500 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f2b900 0%,#f27500 100%);
+}
+
+.gdlr-page-title {color: #fff !important; }
 .content-wrapper{ position:relative; z-index: 89; }
 	
 /*--- top navigation ---*/
@@ -1429,4 +1441,9 @@ only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device
 
 .footer-wrapper .gdlr-icon {
   color:#fff!important;
+}
+
+
+.gdlr-main-menu > .gdlr-normal-menu li, .gdlr-main-menu > .gdlr-mega-menu .sf-mega {
+background-color: rgba(0,0,0,0.4)  !important;
 }
