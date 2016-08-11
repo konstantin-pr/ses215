@@ -13,21 +13,29 @@ Disallow: /rss/
 Disallow: /*.js
 Disallow: /*.inc
 Disallow: /*.css
-Disallow: /*?
 Disallow: /*.gz
-Host: www.domen.ru
+ 
+Sitemap: http://travel-slovenia.ml/sitemap.xml 
+Host: www.travel-slovenia.ml 
 
 User-agent: *
 Disallow: /cgi-bin/
-Disallow: /*.gz
-Disallow: /tag/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /themes/
 Disallow: /trackback/
+Disallow: /feed/
 Disallow: /comment/
+Disallow: /tag/
+Disallow: /author/
+Disallow: /search/
 Disallow: /rss/
+Disallow: /*.js
+Disallow: /*.inc
+Disallow: /*.css
+Disallow: /*.gz
 
-Sitemap: http://travel-slovenia.ml/sitemap.xml
-
-
+Sitemap: http://travel-slovenia.ml/sitemap.xml 
 Host: www.travel-slovenia.ml
 
 
