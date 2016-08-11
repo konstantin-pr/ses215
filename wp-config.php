@@ -7,7 +7,7 @@
  * copy this file to "wp-config.php" and fill in the values.
  *
  * This file contains the following configurations:
- *
+ *  WP_HOME WP_SITEURL
  * * MySQL settings
  * * Secret keys
  * * Database table prefix
@@ -18,18 +18,22 @@
  * @package WordPress
  */
 
+
+define('WP_HOME','http://travel-slovenia.ml/');
+define('WP_SITEURL','http://travel-slovenia.ml/');
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'kpryanichnikovdb');
+define('DB_NAME', 'u769985818_kpdb');
 
 /** MySQL database username */
-define('DB_USER', 'kpryanichnikovdb');
+define('DB_USER', 'u769985818_kp');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'kpryanichnikovshpppass');
+define('DB_PASSWORD', 'shpppass');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'mysql.hostinger.com.ua');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

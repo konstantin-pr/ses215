@@ -1,0 +1,36 @@
+User-agent: Yandex
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /themes/
+Disallow: /trackback/
+Disallow: /feed/
+Disallow: /comment/
+Disallow: /tag/
+Disallow: /author/
+Disallow: /search/
+Disallow: /rss/
+Disallow: /*.js
+Disallow: /*.inc
+Disallow: /*.css
+Disallow: /*?
+Disallow: /*.gz
+Host: www.domen.ru
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /*.gz
+Disallow: /tag/
+Disallow: /trackback/
+Disallow: /comment/
+Disallow: /rss/
+
+Sitemap: http://travel-slovenia.ml/sitemap.xml
+
+
+Host: www.travel-slovenia.ml
+
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^travel-slovenia.ml
+RewriteRule (.*) http://www.travel-slovenia.ml/$1 [R=301,L]
