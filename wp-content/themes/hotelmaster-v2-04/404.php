@@ -19,7 +19,7 @@ get_header(); ?>
 					<?php _e('Error 404', 'gdlr_translate'); ?>
 				</div>
 				<div class="page-not-found-caption">
-					<?php _e('Sorry, we couldn\'t find the page you\'re looking for.', 'gdlr_translate'); ?>
+					<?php _e('Извините, текущая страница не найдена', 'gdlr_translate'); ?>
 				</div>
 				<div class="page-not-found-search">
 					<?php get_search_form(); ?>
