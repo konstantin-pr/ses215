@@ -1,7 +1,11 @@
 <?php get_header(); ?>
+<div class="seo--headers" style="visibility:hidden;height:1px;width:1px;">
+<h1 style="font-size: 1px; color: #fff; text-transform: capitalize;">Spik Travel</h1></div> 
+<h2 style="font-size: 1px; color: #fff; text-transform: capitalize;">Предоставим вам экскурсии,  проживание</h2> 
+<h2 style="font-size: 26px; line-height: 48px; color: orange;">и тёплый приём в Словении</h2> 
+</div>
 
-	<div class="gdlr-content">
-
+<div class="gdlr-content">
 		<!-- Above Sidebar Section-->
 		<?php global $gdlr_post_option, $above_sidebar_content, $with_sidebar_content, $below_sidebar_content; ?>
 		<?php if(!empty($above_sidebar_content)){ ?>

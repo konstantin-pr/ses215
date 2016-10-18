@@ -7,6 +7,7 @@
 
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta description="Spik Travel. Мы уже 20 лет предоставляем лучший отдых на Адриатическом побережье Италии, Словении и Хорватии как индивидуальным туристам так и российским партнёрам"/>
 	<?php
 		global $theme_option, $gdlr_post_option;
 		$body_wrapper = '';
