@@ -36,7 +36,7 @@ h6{ font-size: 16px; }
 .gdlr-main-menu > li > .sf-mega .sf-mega-section-inner > a { color: #ffffff; }
 .gdlr-main-menu > li > .sf-mega .sf-mega-section-inner > a:hover, .gdlr-main-menu > li > .sf-mega .sf-mega-section-inner.current-menu-item > a, .gdlr-main-menu > li > .sf-mega .sf-mega-section-inner.current-menu-ancestor > a { color: #ffffff; }
 #gdlr-responsive-navigation.dl-menuwrapper button { background-color: #cccccc; }
-#gdlr-responsive-navigation.dl-menuwrapper button:hover, #gdlr-responsive-navigation.dl-menuwrapper button.dl-active, #gdlr-responsive-navigation.dl-menuwrapper ul{ background-color: #727272; }
+#gdlr-responsive-navigation.dl-menuwrapper button:hover, #gdlr-responsive-navigation.dl-menuwrapper button.dl-active, #gdlr-responsive-navigation.dl-menuwrapper ul{ background-color: orange; }
 .gdlr-menu-search{ background: #2b2b2b; background: rgba(43, 43, 43, 0.8); }
 body{ background-color: #dddddd; }
 .body-wrapper, .gdlr-single-lightbox-container{ background-color: #ffffff; }
@@ -310,14 +310,11 @@ html .woocommerce .quantity .minus, html .woocommerce #content .quantity .minus,
 .gdlr-navigation-wrapper .gdlr-menu-search-button {
   color: #fff;
 }
-
 .gdlr-navigation-wrapper .gdlr-menu-search-button-sep{ color : #fff; }
-
 .body-wrapper.gdlr-header-transparent .gdlr-page-title-wrapper {
     background-size: contain;
     min-height: 180px;
 }
-
 .gdlr-page-title-wrapper .gdlr-page-title-overlay {  
     opacity: 0.4 !important;
     filter: alpha(opacity=0.4) !important;
