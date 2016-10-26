@@ -28,7 +28,7 @@ html body{ min-width: 300px; }
 	.gdlr-datepicker-range-wrapper .ui-datepicker-group { width: auto; border: none; }
 	
 	.body-wrapper.gdlr-header-transparent .gdlr-page-title-wrapper { padding-top: 70px; }
-	.body-wrapper.gdlr-header-transparent .gdlr-header-wrapper { position: relative; background: #000; }
+	.body-wrapper.gdlr-header-transparent .gdlr-header-wrapper { position: relative; background: orange}
 	
 	.gdlr-hide-in-tablet{ display: none; } 
 	.gdlr-hide-in-tablet-mobile{ display: none; }

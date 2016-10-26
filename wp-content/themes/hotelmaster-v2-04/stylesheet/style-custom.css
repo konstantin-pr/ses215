@@ -310,4 +310,15 @@ html .woocommerce .quantity .minus, html .woocommerce #content .quantity .minus,
 .gdlr-navigation-wrapper .gdlr-menu-search-button {
   color: #fff;
 }
+
 .gdlr-navigation-wrapper .gdlr-menu-search-button-sep{ color : #fff; }
+
+.body-wrapper.gdlr-header-transparent .gdlr-page-title-wrapper {
+    background-size: contain;
+    min-height: 180px;
+}
+
+.gdlr-page-title-wrapper .gdlr-page-title-overlay {  
+    opacity: 0.4 !important;
+    filter: alpha(opacity=0.4) !important;
+}
